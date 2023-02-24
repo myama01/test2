@@ -61,7 +61,8 @@ class LowestCommonAncestor:
 
 	# u と v (0-indexed) の距離を求める
 	def distance(self, u, v):
-		return self._distance[u] + self._distance[v] - 2 * self._distance[self.lca(u, v)]
+		return self._distance[u] + self._distance[v] - 2 \
+	* self._distance[self.lca(u, v)]
 
 # 問題を解く
 N = int(input())
