@@ -32,7 +32,8 @@ class LowestCommonAncestor:
 				if self._ancestor[k - 1][i] == -1:
 					self._ancestor[k][i] = -1
 				else:
-					self._ancestor[k][i] = self._ancestor[k - 1][self._ancestor[k - 1][i]]
+					self._ancestor[k][i] = \
+					self._ancestor[k - 1][self._ancestor[k - 1][i]]
 
 	# u と v (0-indexed) の LCA を求める
 	def lca(self, u, v):
